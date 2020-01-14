@@ -13,6 +13,16 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.squareup.sqldelight.gradle
+package com.squareup.sqldelight.old.gradle
 
-internal class SqlDelightException(message: String) : IllegalStateException(message)
+import org.antlr.v4.runtime.BaseErrorListener
+import org.antlr.v4.runtime.RecognitionException
+import org.antlr.v4.runtime.Recognizer
+import java.io.File
+
+class ErrorListener(private val file: File) : BaseErrorListener() {
+  override fun syntaxError(recognizer: Recognizer<*, *>?, offendingSymbol: Any, line: Int,
+      charPositionInLine: Int, msg: String, e: RecognitionException?) {
+    throw SqlDelightException("${file.name} line $line:$charPositionInLine - $msg")
+  }
+}

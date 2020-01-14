@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.squareup.sqldelight.gradle
+package com.squareup.sqldelight.old.gradle
 
 import com.android.build.gradle.AppExtension
 import com.android.build.gradle.AppPlugin

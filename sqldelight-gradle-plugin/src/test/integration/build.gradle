@@ -19,7 +19,7 @@
 
 plugins {
   id 'com.android.application'
-  id 'com.squareup.sqldelight'
+  id 'com.squareup.sqldelight.old'
 }
 
 apply from: '../../../../gradle/dependencies.gradle'
