@@ -13,7 +13,7 @@ sourceSets {
 }
 
 generateGrammarSource {
-  outputDirectory = new File("src/main/build")
+  outputDirectory = project.file("src/main/build")
 }
 
 dependencies {
