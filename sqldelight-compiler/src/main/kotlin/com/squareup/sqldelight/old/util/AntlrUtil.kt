@@ -13,14 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.squareup.sqldelight.intellij.lang
+package com.squareup.sqldelight.old.util
 
-import com.intellij.openapi.fileTypes.FileTypeConsumer
-import com.intellij.openapi.fileTypes.FileTypeFactory
-import com.squareup.sqldelight.old.SqliteCompiler
+import com.squareup.sqldelight.SqliteParser
 
-class SqliteFileTypeFactory : FileTypeFactory() {
-  override fun createFileTypes(consumer: FileTypeConsumer) {
-    consumer.consume(SqliteFileType.INSTANCE, SqliteCompiler.FILE_EXTENSION)
-  }
-}
+internal fun SqliteParser.Common_table_expressionContext.isRecursive() =
+    (parent as SqliteParser.With_clauseContext).K_RECURSIVE() != null

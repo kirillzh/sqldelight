@@ -22,16 +22,16 @@ import com.intellij.psi.FileViewProviderFactory
 import com.intellij.psi.PsiManager
 import com.intellij.psi.SingleRootFileViewProvider
 import com.squareup.javapoet.JavaFile
-import com.squareup.sqldelight.SqliteCompiler
+import com.squareup.sqldelight.old.SqliteCompiler
 import com.squareup.sqldelight.SqliteParser
-import com.squareup.sqldelight.SqlitePluginException
-import com.squareup.sqldelight.Status
-import com.squareup.sqldelight.Status.ValidationStatus
+import com.squareup.sqldelight.old.SqlitePluginException
+import com.squareup.sqldelight.old.Status
+import com.squareup.sqldelight.old.Status.ValidationStatus
 import com.squareup.sqldelight.intellij.SqlDelightManager
 import com.squareup.sqldelight.intellij.util.moduleDirectory
-import com.squareup.sqldelight.model.pathPackage
-import com.squareup.sqldelight.types.SymbolTable
-import com.squareup.sqldelight.validation.SqlDelightValidator
+import com.squareup.sqldelight.old.model.pathPackage
+import com.squareup.sqldelight.old.types.SymbolTable
+import com.squareup.sqldelight.old.validation.SqlDelightValidator
 
 class SqlDelightFileViewProviderFactory : FileViewProviderFactory {
   override fun createFileViewProvider(virtualFile: VirtualFile, language: Language,

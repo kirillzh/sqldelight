@@ -13,14 +13,12 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.squareup.sqldelight.intellij.lang
+package com.squareup.sqldelight.old.util
 
-import com.intellij.openapi.fileTypes.FileTypeConsumer
-import com.intellij.openapi.fileTypes.FileTypeFactory
-import com.squareup.sqldelight.old.SqliteCompiler
+import org.antlr.v4.runtime.tree.TerminalNode
 
-class SqliteFileTypeFactory : FileTypeFactory() {
-  override fun createFileTypes(consumer: FileTypeConsumer) {
-    consumer.consume(SqliteFileType.INSTANCE, SqliteCompiler.FILE_EXTENSION)
-  }
+internal fun javadocText(javadoc: TerminalNode?) : String? {
+  if (javadoc == null) return null
+  return javadoc.text.removeSurrounding("/**", "*/").trim('\n', ' ').lines()
+      .joinToString("\n") { it.removePrefix("*").trim() } + '\n'
 }

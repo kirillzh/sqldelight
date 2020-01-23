@@ -13,14 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.squareup.sqldelight.intellij.lang
+package com.squareup.sqldelight.old
 
-import com.intellij.openapi.fileTypes.FileTypeConsumer
-import com.intellij.openapi.fileTypes.FileTypeFactory
-import com.squareup.sqldelight.old.SqliteCompiler
+import org.antlr.v4.runtime.ParserRuleContext
 
-class SqliteFileTypeFactory : FileTypeFactory() {
-  override fun createFileTypes(consumer: FileTypeConsumer) {
-    consumer.consume(SqliteFileType.INSTANCE, SqliteCompiler.FILE_EXTENSION)
-  }
-}
+class SqlitePluginException(val originatingElement: ParserRuleContext, override val message: String)
+    : IllegalStateException(message)

@@ -25,12 +25,12 @@ import com.intellij.refactoring.listeners.RefactoringElementListener
 import com.intellij.refactoring.rename.RenameUtil
 import com.intellij.refactoring.rename.RenameUtil.doRename
 import com.intellij.usageView.UsageInfo
-import com.squareup.sqldelight.SqliteCompiler
+import com.squareup.sqldelight.old.SqliteCompiler
 import com.squareup.sqldelight.intellij.lang.SqliteFile
 import com.squareup.sqldelight.intellij.psi.SqliteElement
 import com.squareup.sqldelight.intellij.psi.SqliteElement.ColumnNameElement
 import com.squareup.sqldelight.intellij.psi.SqliteElement.SqlStmtNameElement
-import com.squareup.sqldelight.model.methodName
+import com.squareup.sqldelight.old.model.methodName
 import java.util.ArrayList
 
 /**

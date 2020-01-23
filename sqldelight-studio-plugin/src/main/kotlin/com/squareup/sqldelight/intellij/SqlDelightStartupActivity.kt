@@ -25,7 +25,7 @@ import com.intellij.psi.PsiManager
 import com.squareup.sqldelight.intellij.lang.SqlDelightFileViewProvider
 import com.squareup.sqldelight.intellij.lang.SqliteContentIterator
 import com.squareup.sqldelight.intellij.lang.SqliteFile
-import com.squareup.sqldelight.types.SymbolTable
+import com.squareup.sqldelight.old.types.SymbolTable
 
 class SqlDelightStartupActivity : StartupActivity {
   override fun runActivity(project: Project) {

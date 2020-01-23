@@ -25,8 +25,8 @@ import com.squareup.sqldelight.SqliteParser
 import com.squareup.sqldelight.intellij.lang.SqlDelightFileViewProvider
 import com.squareup.sqldelight.intellij.lang.SqliteFile
 import com.squareup.sqldelight.intellij.util.containingParse
-import com.squareup.sqldelight.types.SymbolTable
-import com.squareup.sqldelight.validation.SqlDelightValidator.Companion.ALL_FILE_DEPENDENCY
+import com.squareup.sqldelight.old.types.SymbolTable
+import com.squareup.sqldelight.old.validation.SqlDelightValidator.Companion.ALL_FILE_DEPENDENCY
 import org.antlr.v4.runtime.ParserRuleContext
 
 class SqlDelightManager private constructor() {

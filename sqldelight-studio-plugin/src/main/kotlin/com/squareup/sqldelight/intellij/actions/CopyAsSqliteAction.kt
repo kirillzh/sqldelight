@@ -20,9 +20,9 @@ import com.intellij.openapi.actionSystem.AnActionEvent
 import com.intellij.openapi.actionSystem.LangDataKeys
 import com.intellij.openapi.actionSystem.PlatformDataKeys
 import com.intellij.openapi.ide.CopyPasteManager
-import com.squareup.sqldelight.SqliteCompiler
+import com.squareup.sqldelight.old.SqliteCompiler
 import com.squareup.sqldelight.intellij.lang.SqliteFile
-import com.squareup.sqldelight.model.sqliteText
+import com.squareup.sqldelight.old.model.sqliteText
 import java.awt.datatransfer.StringSelection
 
 class CopyAsSqliteAction : AnAction() {

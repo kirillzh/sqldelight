@@ -32,10 +32,10 @@ import com.squareup.sqldelight.SqliteLexer
 import com.squareup.sqldelight.SqliteParser
 import com.squareup.sqldelight.intellij.SqlDelightManager
 import com.squareup.sqldelight.intellij.util.elementAt
-import com.squareup.sqldelight.resolution.ResolutionError
-import com.squareup.sqldelight.resolution.Resolver
-import com.squareup.sqldelight.types.SymbolTable
-import com.squareup.sqldelight.validation.SqlDelightValidator
+import com.squareup.sqldelight.old.resolution.ResolutionError
+import com.squareup.sqldelight.old.resolution.Resolver
+import com.squareup.sqldelight.old.types.SymbolTable
+import com.squareup.sqldelight.old.validation.SqlDelightValidator
 import org.antlr.v4.runtime.ANTLRInputStream
 import org.antlr.v4.runtime.CommonTokenStream
 import org.antlr.v4.runtime.ParserRuleContext

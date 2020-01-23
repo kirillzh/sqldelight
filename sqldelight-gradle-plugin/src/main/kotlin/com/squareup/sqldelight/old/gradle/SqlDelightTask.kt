@@ -16,18 +16,18 @@
 package com.squareup.sqldelight.old.gradle
 
 import com.squareup.javapoet.JavaFile
-import com.squareup.sqldelight.SqliteCompiler
 import com.squareup.sqldelight.SqliteLexer
 import com.squareup.sqldelight.SqliteParser
 import com.squareup.sqldelight.SqliteParser.Create_table_stmtContext
 import com.squareup.sqldelight.SqliteParser.Sql_stmtContext
-import com.squareup.sqldelight.SqlitePluginException
-import com.squareup.sqldelight.Status
 import com.squareup.sqldelight.VERSION
-import com.squareup.sqldelight.model.relativePath
-import com.squareup.sqldelight.model.textWithWhitespace
-import com.squareup.sqldelight.types.SymbolTable
-import com.squareup.sqldelight.validation.SqlDelightValidator
+import com.squareup.sqldelight.old.SqliteCompiler
+import com.squareup.sqldelight.old.SqlitePluginException
+import com.squareup.sqldelight.old.Status
+import com.squareup.sqldelight.old.model.relativePath
+import com.squareup.sqldelight.old.model.textWithWhitespace
+import com.squareup.sqldelight.old.types.SymbolTable
+import com.squareup.sqldelight.old.validation.SqlDelightValidator
 import org.antlr.v4.runtime.ANTLRInputStream
 import org.antlr.v4.runtime.CommonTokenStream
 import org.antlr.v4.runtime.ParserRuleContext

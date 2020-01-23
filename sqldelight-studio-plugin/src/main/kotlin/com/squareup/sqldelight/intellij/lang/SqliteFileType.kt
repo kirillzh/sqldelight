@@ -20,7 +20,7 @@ import com.intellij.openapi.util.IconLoader
 import com.intellij.openapi.vfs.CharsetToolkit
 import com.intellij.openapi.vfs.VirtualFile
 import com.intellij.openapi.vfs.encoding.EncodingRegistry
-import com.squareup.sqldelight.SqliteCompiler
+import com.squareup.sqldelight.old.SqliteCompiler
 
 class SqliteFileType private constructor() : LanguageFileType(SqliteLanguage.INSTANCE) {
   override fun getName() = "Sqlite"

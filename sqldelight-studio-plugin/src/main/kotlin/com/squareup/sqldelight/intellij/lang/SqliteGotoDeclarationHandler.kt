@@ -24,7 +24,7 @@ import com.intellij.psi.PsiField
 import com.intellij.psi.PsiIdentifier
 import com.intellij.psi.PsiManager
 import com.intellij.psi.impl.source.tree.java.PsiReferenceExpressionImpl
-import com.squareup.sqldelight.SqliteCompiler
+import com.squareup.sqldelight.old.SqliteCompiler
 import com.squareup.sqldelight.SqliteParser
 import com.squareup.sqldelight.intellij.lang.SqliteTokenTypes.RULE_ELEMENT_TYPES
 import com.squareup.sqldelight.intellij.psi.SqliteElement.ColumnNameElement

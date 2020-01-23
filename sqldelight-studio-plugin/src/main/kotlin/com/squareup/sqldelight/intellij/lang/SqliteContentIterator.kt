@@ -18,7 +18,7 @@ package com.squareup.sqldelight.intellij.lang
 import com.intellij.openapi.roots.ContentIterator
 import com.intellij.openapi.vfs.VirtualFile
 import com.intellij.psi.PsiManager
-import com.squareup.sqldelight.SqliteCompiler
+import com.squareup.sqldelight.old.SqliteCompiler
 
 class SqliteContentIterator(private val psiManager: PsiManager,
     private val processor: (file: SqliteFile) -> Boolean) : ContentIterator {

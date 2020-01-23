@@ -24,8 +24,8 @@ import com.squareup.sqldelight.intellij.util.doRename
 import com.squareup.sqldelight.intellij.util.findUsages
 import com.squareup.sqldelight.intellij.util.isDefinition
 import com.squareup.sqldelight.intellij.util.leafAt
-import com.squareup.sqldelight.resolution.Resolver
-import com.squareup.sqldelight.validation.SqlDelightValidator
+import com.squareup.sqldelight.old.resolution.Resolver
+import com.squareup.sqldelight.old.validation.SqlDelightValidator
 
 class SqlDelightElementRef(idNode: IdentifierElement, ruleName: String)
 : PsiReferenceBase<IdentifierElement>(idNode, TextRange(0, ruleName.length)) {

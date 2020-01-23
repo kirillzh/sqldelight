@@ -20,7 +20,7 @@ import com.intellij.codeInsight.completion.CompletionType
 import com.intellij.testFramework.fixtures.LightPlatformCodeInsightFixtureTestCase
 import com.squareup.sqldelight.intellij.SqlDelightManager
 import com.squareup.sqldelight.intellij.lang.SqlDelightFileViewProvider
-import com.squareup.sqldelight.types.SymbolTable
+import com.squareup.sqldelight.old.types.SymbolTable
 import java.io.File
 
 abstract class SqlDelightFixtureTestCase : LightPlatformCodeInsightFixtureTestCase() {

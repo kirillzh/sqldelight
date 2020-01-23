@@ -13,14 +13,13 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.squareup.sqldelight.intellij.lang
+package com.squareup.sqldelight.old.util
 
-import com.intellij.openapi.fileTypes.FileTypeConsumer
-import com.intellij.openapi.fileTypes.FileTypeFactory
-import com.squareup.sqldelight.old.SqliteCompiler
+import org.antlr.v4.runtime.ParserRuleContext
+import org.antlr.v4.runtime.Token
 
-class SqliteFileTypeFactory : FileTypeFactory() {
-  override fun createFileTypes(consumer: FileTypeConsumer) {
-    consumer.consume(SqliteFileType.INSTANCE, SqliteCompiler.FILE_EXTENSION)
-  }
-}
+internal fun List<Token>.hasTokenIn(parse: ParserRuleContext) =
+    any {
+      (it.startIndex >= parse.start.startIndex && it.startIndex <= parse.stop.stopIndex)
+          || (it.stopIndex >= parse.start.startIndex && it.stopIndex <= parse.stop.stopIndex)
+    }

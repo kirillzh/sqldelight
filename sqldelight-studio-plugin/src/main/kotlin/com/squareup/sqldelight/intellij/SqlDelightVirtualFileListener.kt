@@ -22,7 +22,7 @@ import com.intellij.openapi.vfs.VirtualFileEvent
 import com.intellij.openapi.vfs.VirtualFileMoveEvent
 import com.intellij.openapi.vfs.VirtualFilePropertyEvent
 import com.intellij.psi.PsiManager
-import com.squareup.sqldelight.SqliteCompiler
+import com.squareup.sqldelight.old.SqliteCompiler
 import com.squareup.sqldelight.intellij.lang.SqlDelightFileViewProvider
 import com.squareup.sqldelight.intellij.lang.SqliteFile
 import java.util.LinkedHashMap
